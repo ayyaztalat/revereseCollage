@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0000">
+
+        <FrameLayout
+            android:id="@+id/layout_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dm_xml_square_back" />
+
+            <TextView
+                android:id="@+id/sticker_top_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="@string/sticker_top_label_text"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_ok"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#00ff00">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dm_xml_square_back" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/item_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="#fff"
+            android:numColumns="4" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lyLeftView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#88000000"
+        android:visibility="invisible" />
+
+    <GridView
+        android:id="@+id/group_grid"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-200dp"
+        android:layout_marginTop="50dp"
+        android:background="#fff" />
+
+    <FrameLayout
+        android:id="@+id/lyLeftBtn"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:background="#00ff00">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dm_img_leftmenu_btn" />
+    </FrameLayout>
+</RelativeLayout>

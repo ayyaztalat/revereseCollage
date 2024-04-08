@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f8f8f8">
+
+        <ImageView
+            android:id="@+id/label_ic_1"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f1f1f1">
+
+        <ImageView
+            android:id="@+id/label_ic_2"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f3f3f3">
+
+        <ImageView
+            android:id="@+id/label_ic_3"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f3f3f3">
+
+        <ImageView
+            android:id="@+id/label_ic_4"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f3f3f3">
+
+        <ImageView
+            android:id="@+id/label_ic_5"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f3f3f3">
+
+        <ImageView
+            android:id="@+id/label_ic_6"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+
+    <ImageView style="@style/label_image_slit" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#f3f3f3">
+
+        <ImageView
+            android:id="@+id/label_ic_7"
+            style="@style/label_ic_style" />
+    </FrameLayout>
+</LinearLayout>

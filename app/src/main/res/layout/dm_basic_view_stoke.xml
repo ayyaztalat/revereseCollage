@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/basic_underline_layout_h"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_underline"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/basic_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/basic_underline_layout_h">
+
+        <LinearLayout
+            android:id="@+id/button_underline_single"
+            style="@style/basic_stoke_underline_button_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.picspool.instatextview.utils.DMSelectorImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/basic_stoke_underline_button_w"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_underline_double"
+            style="@style/basic_stoke_underline_button_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.picspool.instatextview.utils.DMSelectorImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/basic_stoke_underline_button_w"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_underline_dashed"
+            style="@style/basic_stoke_underline_button_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.picspool.instatextview.utils.DMSelectorImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/basic_stoke_underline_button_w"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_underline_layout_h"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basic_space"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/basic_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/basic_underline_offset_h"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dm_underline_top_offset" />
+
+            <SeekBar
+                android:id="@+id/seekbar_text_vertical_offset"
+                android:layout_width="@dimen/basic_shadow_seekbar_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="20"
+                android:maxHeight="@dimen/basic_seekbar_h"
+                android:minHeight="@dimen/basic_seekbar_h"
+                android:paddingLeft="@dimen/seek_bar_padding"
+                android:paddingRight="@dimen/seek_bar_padding"
+                android:progress="0"
+                android:progressDrawable="@drawable/dm_seekbar_white_color"
+                android:thumb="@drawable/dm_text_seekbar_button" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="@dimen/basic_underline_offset_w"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dm_underline_buttom_offset" />
+
+            <SeekBar
+                android:id="@+id/seekbar_text_horizontal_offset"
+                android:layout_width="@dimen/basic_shadow_seekbar_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="20"
+                android:maxHeight="@dimen/basic_seekbar_h"
+                android:minHeight="@dimen/basic_seekbar_h"
+                android:paddingLeft="@dimen/seek_bar_padding"
+                android:paddingRight="@dimen/seek_bar_padding"
+                android:progress="0"
+                android:progressDrawable="@drawable/dm_seekbar_white_color"
+                android:thumb="@drawable/dm_text_seekbar_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_editor_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/libui_barview_mainbg_grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/libui_barview_bottom_margin">
+
+        <com.touch.android.library.imagezoom.ImageViewTouch
+            android:id="@+id/img_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/libui_barmainview_margin" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_funcbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libui_func_bar_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libui_bottom_title_bar_height"
+        android:background="@color/libui_barview_mainbg_white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ly_crop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/libui_bar_icon_width"
+                android:layout_height="@dimen/libui_bar_icon_width"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_square_editor_crop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="@string/editorbar_crop"
+                android:textColor="@color/libui_barview_icon_grey"
+                android:textSize="@dimen/libui_bar_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_right"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/libui_bar_icon_width"
+                android:layout_height="@dimen/libui_bar_icon_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/img_square_editor_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="@string/editorbar_right"
+                android:textColor="@color/libui_barview_icon_grey"
+                android:textSize="@dimen/libui_bar_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_left"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/libui_bar_icon_width"
+                android:layout_height="@dimen/libui_bar_icon_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/img_square_editor_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="@string/editorbar_left"
+                android:textColor="@color/libui_barview_icon_grey"
+                android:textSize="@dimen/libui_bar_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_hflip"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/libui_bar_icon_width"
+                android:layout_height="@dimen/libui_bar_icon_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/img_square_editor_hflip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="@string/editorbar_horizontal"
+                android:textColor="@color/libui_barview_icon_grey"
+                android:textSize="@dimen/libui_bar_text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_vflip"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/libui_bar_icon_width"
+                android:layout_height="@dimen/libui_bar_icon_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/img_square_editor_vflip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="@string/editorbar_vertical"
+                android:textColor="@color/libui_barview_icon_grey"
+                android:textSize="@dimen/libui_bar_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libui_bottom_title_bar_height"
+        android:layout_gravity="bottom"
+        android:background="@color/libui_barview_mainbg_white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/libui_barview_line_grey" />
+
+        <FrameLayout
+            android:id="@+id/ly_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/overlayBack"
+                android:layout_width="@dimen/libui_cancel_icon_width"
+                android:layout_height="@dimen/libui_cancel_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_cancel" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/libui_barview_title_editor"
+            android:textColor="@color/libui_barview_txt_grey"
+            android:textSize="@dimen/libui_barmainview_title_txtsize" />
+
+        <FrameLayout
+            android:id="@+id/ly_confirm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/overlayAccept"
+                android:layout_width="@dimen/libui_ok_icon_width"
+                android:layout_height="@dimen/libui_ok_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_ok" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/label_top_bar_color">
+
+        <LinearLayout
+            android:id="@+id/button_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dm_img_label_top_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top_label_bar_back"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/top_name_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dm_img_label_list_top" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/label_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/label_bottom_bar_fl"
+        android:layout_below="@+id/top_layout" />
+
+    <LinearLayout
+        android:id="@+id/label_bottom_bar_fl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_label_new_year"
+            style="@style/bottom_tabs_ll"
+            android:layout_margin="5dp"
+            android:background="@drawable/dm_btn_label_new_year">
+
+            <ImageView
+                android:layout_width="@dimen/text_toor_image_size"
+                android:layout_height="@dimen/text_toor_image_size"
+                android:src="@drawable/dm_img_label_new_year" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_label_love"
+            style="@style/bottom_tabs_ll"
+            android:layout_margin="5dp"
+            android:background="@drawable/dm_btn_label_love">
+
+            <ImageView
+                android:layout_width="@dimen/text_toor_image_size"
+                android:layout_height="@dimen/text_toor_image_size"
+                android:src="@drawable/dm_img_label_love" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_label_label"
+            style="@style/bottom_tabs_ll"
+            android:layout_margin="5dp"
+            android:background="@drawable/dm_btn_label_label">
+
+            <ImageView
+                android:layout_width="@dimen/text_toor_image_size"
+                android:layout_height="@dimen/text_toor_image_size"
+                android:src="@drawable/dm_img_label_label" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

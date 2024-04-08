@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1003607343592",
+    "project_id": "test-project-2bc68",
+    "storage_bucket": "test-project-2bc68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003607343592:android:fc73148163775977ce245d",
+        "android_client_info": {
+          "package_name": "com.sky.testproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_YWaSagM-Ui054WXC2XHqaouh0tzi6Aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

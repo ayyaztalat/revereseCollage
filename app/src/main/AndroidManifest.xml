@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestProject"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true">
+
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSLauncherActivity"
+        android:exported="true"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSSingleActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSShareActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+
+    <meta-data
+        android:name="ScopedStorage"
+        android:value="true" />
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="com.sky.testproject.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/provider_paths" />
+    </provider>
+
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSSquareMainActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSStickerOnlineStoreAcitvity"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSSettingActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSWebViewActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.CSMainActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.TemplateActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.photo.editor.square.splash.activitys.FreeTemplateActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.magic.video.editor.effect.gallery.view.CSGalleryActivity"
+        android:exported="false" />
+
+
+    <activity
+        android:name="com.picspool.snappic.activity.CSSnapPicMain2Activity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+
+<!--    <meta-data-->
+<!--        android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--        android:value="@string/admob_app_id" />-->
+
+    <activity
+        android:name="com.picspool.libfuncview.effect.onlinestore.CSOLSEffectActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.picspool.libfuncview.setting.CSSettingEffectActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+        android:configChanges="screenSize|orientation|keyboardHidden"
+        android:theme="@style/ActivityTranslucent"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+    <activity
+        android:name="com.blankj.utilcode.util.UtilsTransActivity"
+        android:configChanges="screenSize|orientation|keyboardHidden"
+        android:multiprocess="true"
+        android:theme="@style/ActivityTranslucent"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <provider
+        android:name="com.blankj.utilcode.util.UtilsFileProvider"
+        android:authorities="com.sky.testproject.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/util_code_provider_paths" />
+    </provider>
+
+    </application>
+</manifest>

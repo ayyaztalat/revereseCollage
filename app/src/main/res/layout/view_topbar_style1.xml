@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/libui_barview_mainbg_white"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/ly_topbar_style1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <FrameLayout
+            android:id="@+id/ly_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_square_back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/topbar_title_text_style"
+            android:text=" " />
+
+        <FrameLayout
+            android:id="@+id/ly_done"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/img_topbar_save"
+                android:gravity="center"
+                android:text="@string/topbar_save"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_save_light"
+                android:layout_width="12dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-12dp"
+                android:src="@drawable/img_topsave_light_anim" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_topbar_style2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/libui_barview_line_grey" />
+
+        <FrameLayout
+            android:id="@+id/ly_cancel"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="7dp">
+
+            <ImageView
+                android:layout_width="@dimen/libui_cancel_icon_width"
+                android:layout_height="@dimen/libui_cancel_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_cancel" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_add"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/libui_shaper_apply_add" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_filter_title"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/libui_barview_title_filter"
+                android:textColor="@color/libui_barview_txt_grey"
+                android:textSize="@dimen/libui_barmainview_title_txtsize" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_ok"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="7dp">
+
+            <ImageView
+                android:layout_width="@dimen/libui_ok_icon_width"
+                android:layout_height="@dimen/libui_ok_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_ok" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

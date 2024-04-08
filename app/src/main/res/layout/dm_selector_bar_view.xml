@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/top_gray">
+
+    <FrameLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:background="@color/album_bar_color">
+
+        <com.picspool.lib.view.DMPhotoChooseScrollView
+            android:id="@+id/photoChooseScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dm_confirm_btn_color"
+            android:text="Button"
+            android:textColor="@color/album_bar_text_color"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+</FrameLayout>

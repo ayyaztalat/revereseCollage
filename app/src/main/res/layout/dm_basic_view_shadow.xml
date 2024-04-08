@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_align"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/basic_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/shadow_align_left"
+                    style="@style/align_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/shadow_align_left_img"
+                        android:layout_width="@dimen/basic_shadow_align_image_size"
+                        android:layout_height="@dimen/basic_shadow_align_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shadow_align_centre"
+                    style="@style/align_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/shadow_align_centre_img"
+                        android:layout_width="@dimen/basic_shadow_align_image_size"
+                        android:layout_height="@dimen/basic_shadow_align_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shadow_align_right"
+                    style="@style/align_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/shadow_align_right_img"
+                        android:layout_width="@dimen/basic_shadow_align_image_size"
+                        android:layout_height="@dimen/basic_shadow_align_image_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="@dimen/basic_shadow_seekbar_w"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="255"
+                android:maxHeight="@dimen/basic_seekbar_h"
+                android:minHeight="@dimen/basic_seekbar_h"
+                android:paddingLeft="@dimen/seek_bar_padding"
+                android:paddingRight="@dimen/seek_bar_padding"
+                android:progress="0"
+                android:progressDrawable="@drawable/dm_shadow_alpha_seekbar"
+                android:thumb="@drawable/dm_text_seekbar_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_shadow"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/basic_text_size" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/button_left_top_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_left_top_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_left_bottom_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_left_bottom_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_top_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_top_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_right_top_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_right_top_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_right_bottom_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_right_bottom_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_bottom_shadow"
+                    style="@style/basic_shadow_button_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/button_bottom_shadow_img"
+                        android:layout_width="@dimen/basic_shadow_image_size"
+                        android:layout_height="@dimen/basic_shadow_image_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basic_stroke"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/basic_text_size" />
+
+            <LinearLayout
+                android:id="@+id/button_basic_Stroke"
+                android:layout_width="@dimen/basic_stoke_switch_w"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/basic_stoke_switch_image_w"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dm_button_selector_basic_switch" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_underline_layout_h">
+
+            <com.picspool.lib.widget.colorgallery.DMColorGalleryView
+                android:id="@+id/stoke_color_gallery_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

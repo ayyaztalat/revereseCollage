@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@color/edit_top_block_color" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@color/edit_top_block_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50464646">
+
+            <com.picspool.instatextview.edit.DM_TextFixedView
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linear_layout" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#eef0f3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/bottom_key"
+                    style="@style/bottom_tabs_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/image_key"
+                        android:layout_width="@dimen/text_toor_image_size"
+                        android:layout_height="@dimen/text_toor_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_basic"
+                    style="@style/bottom_tabs_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/image_basic"
+                        android:layout_width="@dimen/text_toor_image_size"
+                        android:layout_height="@dimen/text_toor_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_typeface"
+                    style="@style/bottom_tabs_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/image_typeface"
+                        android:layout_width="@dimen/text_toor_image_size"
+                        android:layout_height="@dimen/text_toor_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_bubble"
+                    style="@style/bottom_tabs_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/image_bubble"
+                        android:layout_width="@dimen/text_toor_image_size"
+                        android:layout_height="@dimen/text_toor_image_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_finish"
+                    style="@style/bottom_tabs_ll">
+
+                    <com.picspool.instatextview.utils.DMSelectorImageView
+                        android:id="@+id/image_finish"
+                        android:layout_width="@dimen/text_toor_image_size"
+                        android:layout_height="@dimen/text_toor_image_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/font_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#464646" />
+
+        <FrameLayout
+            android:id="@+id/text_basic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <include layout="@layout/dm_text_online_basic_view" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/bg_seekbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/seekbar_bg_transparency"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:maxHeight="@dimen/basic_seekbar_h"
+                    android:minHeight="@dimen/basic_seekbar_h"
+                    android:paddingLeft="@dimen/seek_bar_padding"
+                    android:paddingRight="@dimen/seek_bar_padding"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/dm_shadow_alpha_seekbar"
+                    android:thumb="@drawable/dm_text_seekbar_button" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/bg_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bg_seekbar_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dm_basic_selector_color"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="top"
+            android:background="#000000" />
+    </FrameLayout>
+</LinearLayout>

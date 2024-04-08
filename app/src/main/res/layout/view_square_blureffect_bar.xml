@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/libui_barview_mainbg_grey"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="180dp">
+
+        <com.picspool.libsquare.view.CSSquareView
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_bgeffect_root"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"
+        android:background="@color/libui_barview_mainbg_white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/libui_bottom_title_bar_height"
+            android:layout_gravity="bottom"
+            android:background="@color/libui_barview_mainbg_white">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="top"
+                android:layout_marginBottom="50dp"
+                android:background="@color/libui_barview_line_grey" />
+
+            <FrameLayout
+                android:id="@+id/ly_cancel"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/libui_cancel_icon_width"
+                    android:layout_height="@dimen/libui_cancel_icon_width"
+                    android:layout_gravity="center"
+                    android:src="@drawable/xml_top_cancel" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/ly_confirm"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="@dimen/libui_ok_icon_width"
+                    android:layout_height="@dimen/libui_ok_icon_width"
+                    android:layout_gravity="center"
+                    android:src="@drawable/xml_top_ok" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/libui_barview_title_blur"
+                android:textColor="@color/libui_barview_txt_grey"
+                android:textSize="@dimen/libui_barmainview_title_txtsize" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="top">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/img_funcicon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/square_editor_blur" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/ly_photoselector"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:id="@+id/img_photoselector"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/square_select_photo" />
+            </FrameLayout>
+
+            <SeekBar
+                android:id="@+id/seekbar_main"
+                style="@style/MySeekBarStyle"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="65dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

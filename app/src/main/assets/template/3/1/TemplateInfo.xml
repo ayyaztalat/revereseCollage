@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<puzzle>
+<resId>1</resId>
+<version>1</version>
+<iconPath>icon.png</iconPath>
+<width>3060</width>
+<height>3060</height>
+<photoAmount>3</photoAmount>
+<photoPuzzlePieces>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{30,480,0,0},{931,480,0,0},{931,1380,0,0},{30,1380,0,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{2131,480,0,0},{3030,480,0,0},{3030,1380,0,0},{2131,1380,0,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{931,1380,0,0},{2131,1380,0,0},{2131,2580,0,0},{931,2580,0,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+</photoPuzzlePieces>
+</puzzle>
+

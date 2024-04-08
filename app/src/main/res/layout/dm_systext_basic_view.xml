@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/basic_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="@dimen/basic_button_layout_w"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basic_top_line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/basic_color"
+            style="@style/basic_tabs_ll">
+
+            <com.picspool.lib.text.util.DMSelectorImageView
+                android:id="@+id/img_text_basic_color"
+                android:layout_width="@dimen/basic_button_image_size"
+                android:layout_height="@dimen/basic_button_image_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_shadow"
+            style="@style/basic_tabs_ll">
+
+            <com.picspool.lib.text.util.DMSelectorImageView
+                android:id="@+id/img_text_basic_shadow"
+                android:layout_width="@dimen/basic_button_image_size"
+                android:layout_height="@dimen/basic_button_image_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/basic_stoke"
+            style="@style/basic_tabs_ll">
+
+            <com.picspool.lib.text.util.DMSelectorImageView
+                android:id="@+id/img_text_basic_stoke"
+                android:layout_width="@dimen/basic_button_image_size"
+                android:layout_height="@dimen/basic_button_image_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/basic_bottom_line"
+        android:layout_below="@+id/basic_top_line"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background="@drawable/basic_mian_bg_color"
+        android:orientation="vertical">
+
+        <com.picspool.lib.text.edit.DMBasicShadowView
+            android:id="@+id/basic_shadow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/basic_content_margin"
+            android:layout_marginRight="@dimen/basic_content_margin"
+            android:visibility="invisible" />
+
+        <com.picspool.lib.text.edit.DMBasicColorView
+            android:id="@+id/basic_color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/basic_content_margin"
+            android:layout_marginRight="@dimen/basic_content_margin"
+            android:visibility="invisible" />
+
+        <com.picspool.lib.text.edit.DMBasicStokeView
+            android:id="@+id/basic_stoke_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/basic_content_margin"
+            android:layout_marginRight="@dimen/basic_content_margin"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/basic_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background="#000000" />
+</RelativeLayout>

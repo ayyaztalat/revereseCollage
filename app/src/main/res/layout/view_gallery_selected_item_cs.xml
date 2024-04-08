@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="80dp"
+    android:layout_height="90dp">
+
+    <com.magic.video.editor.effect.gallery.view.CSIgnoreRecycleImageView
+        android:id="@+id/bg_icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start|center_vertical"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/item_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallery_delete" />
+</FrameLayout>

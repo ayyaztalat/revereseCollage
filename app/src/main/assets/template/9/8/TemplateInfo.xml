@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<puzzle>
+<resId>1</resId>
+<version>1</version>
+<iconPath>icon.png</iconPath>
+<width>3060</width>
+<height>3060</height>
+<photoAmount>9</photoAmount>
+<photoPuzzlePieces>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{0,0,0,0},{612,0,1,0},{612,3060,1,0},{0,3060,0,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{612,0,1,0},{1224,0,2,0},{1224,1530,2,1}{612,1530,1,1}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{1224,0,2,0},{1836,0,3,0},{1836,1530,3,1},{1224,1530,2,1}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{1836,0,3,0},{2448,0,4,0},{2448,1530,4,1},{1836,1530,3,1}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{2448,0,4,0},{3060,0,0,0},{3060,1530,0,1},{2448,1530,4,1}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+     <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{612,1530,1,1},{1224,1530,2,1},{1224,3060,2,0},{612,3060,1,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{1224,1530,2,1},{1836,1530,3,1},{1836,3060,3,0},{1224,3060,2,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle> 
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{1836,1530,3,1},{2448,1530,4,1},{2448,3060,4,0},{1836,3060,3,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>  
+    <photoPuzzle>
+        <maskPath></maskPath>
+        <frameRectArray>
+            <points>{{2448,1530,4,1},{3060,1530,0,1},{3060,3060,0,0},{2448,3060,4,0}}</points>
+        </frameRectArray>
+        <isShowFrame>false</isShowFrame>
+        <isCanCorner>true</isCanCorner>
+    </photoPuzzle>    
+</photoPuzzlePieces>
+</puzzle>
+

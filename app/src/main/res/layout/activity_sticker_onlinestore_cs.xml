@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_mian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xlb_stickerbar_main_color_grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/xlb_stickerbar_main_color">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_square_back" />
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/xlb_stickerbar_main_color_line" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:text="@string/stickerbar_onlinestore_title"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/btn_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_stikcerbar_setting" />
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/xlb_stickerbar_main_color_line" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

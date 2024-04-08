@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_rootcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.picspool.instatextview.textview.DMConstRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtmessage"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/image_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+                <com.winflag.libcollage.view.TemplateView
+                    android:id="@+id/templateView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@color/view" />
+
+                <ImageView
+                    android:id="@+id/image_left_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/templateView"
+                    android:layout_alignTop="@+id/templateView" />
+
+                <ImageView
+                    android:id="@+id/image_reit_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/templateView"
+                    android:layout_alignRight="@+id/templateView" />
+
+                <ImageView
+                    android:id="@+id/image_left_bottem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/templateView"
+                    android:layout_alignBottom="@+id/templateView" />
+
+                <ImageView
+                    android:id="@+id/image_reit_bottem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/templateView"
+                    android:layout_alignBottom="@+id/templateView" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ad_banner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical" />
+
+        <com.winflag.libcollage.view.TemplateBottomBarView
+            android:id="@+id/viewTemplateBottomBar1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" />
+
+        <com.winflag.libcollage.view.TemplateSingleBottomBarView
+            android:id="@+id/viewTemplateSingleBottomBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+
+        <com.photo.editor.square.splash.widget.CSTopBarStyle1
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:id="@+id/ly_sub_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp" />
+
+        <RelativeLayout
+            android:id="@+id/ly_single_sub_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <FrameLayout
+            android:id="@+id/highbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/longclickprompt"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+    </com.picspool.instatextview.textview.DMConstRelativeLayout>
+
+    <com.winflag.libcollage.widget.ISInstaTextView
+        android:id="@+id/instaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.picspool.instatextview.textview.DMInstaTextView3
+        android:id="@+id/instaTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/layout_editor_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

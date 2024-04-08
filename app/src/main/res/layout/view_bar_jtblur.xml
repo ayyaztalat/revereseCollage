@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:id="@+id/ly_img_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp">
+
+        <com.picspool.lib.filter.gpu.GPUImageView
+            android:id="@+id/gpu_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/img_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekbar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100" />
+
+            <SeekBar
+                android:id="@+id/seekbar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100" />
+
+            <SeekBar
+                android:id="@+id/seekbar_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100" />
+
+            <SeekBar
+                android:id="@+id/seekbar_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/xlb_stickerbar_main_color">
+
+        <FrameLayout
+            android:id="@+id/ly_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/libui_cancel_icon_width"
+                android:layout_height="@dimen/libui_cancel_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_cancel" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ly_confirm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="@dimen/libui_ok_icon_width"
+                android:layout_height="@dimen/libui_ok_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_ok" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_cancel" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_done"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="7dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_ok" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/btn_filter_like"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/xml_filter_ui_like"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@color/xlb_stickerbar_main_color">
+
+        <HorizontalScrollView
+            android:id="@+id/hrzScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom"
+            android:isScrollContainer="false"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/hrzLinearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content1"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header1" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content2"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header2" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content3"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header3" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content4"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header4" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content5"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header5" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content6"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header6" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content7"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header7" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content8"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header8" />
+
+                <com.baiwang.libuiinstalens.filter.CSExpandableLayout
+                    android:id="@+id/filtergroup9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    expandable:el_contentLayout="@layout/ui_filter_view_content9"
+                    expandable:el_headerLayout="@layout/ui_filter_view_header9" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</FrameLayout>

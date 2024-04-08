@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_container"
+    android:layout_width="72dp"
+    android:layout_height="72dp">
+
+    <com.picspool.lib.view.image.DMIgnoreRecycleImageView
+        android:id="@+id/img_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:scaleType="fitCenter" />
+
+    <com.winflag.libcollage.widget.radioview.RatioImageView
+        android:id="@+id/radio_imgview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textSize="9sp" />
+</FrameLayout>

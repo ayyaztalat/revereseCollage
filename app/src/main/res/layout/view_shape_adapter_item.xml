@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <FrameLayout
+            android:id="@+id/ly_select"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_lock"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right"
+        android:layout_margin="3dp"
+        android:src="@drawable/img_reslockicon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textSize="9sp"
+        android:visibility="invisible" />
+</FrameLayout>

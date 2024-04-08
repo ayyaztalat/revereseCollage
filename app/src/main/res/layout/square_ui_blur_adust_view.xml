@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <FrameLayout
+        android:id="@+id/square_ui_blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/top_grey" />
+
+    <SeekBar
+        android:id="@+id/seekBlur2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:progressDrawable="@drawable/seekbar"
+        android:thumb="@drawable/seekthumb" />
+
+    <FrameLayout
+        android:id="@+id/layout_close2"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_blur_close" />
+    </FrameLayout>
+</FrameLayout>

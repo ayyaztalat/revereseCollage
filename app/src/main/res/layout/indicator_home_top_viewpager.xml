@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/indicator_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/style_home_viewpager_indicator"/>
+    <View style="@style/style_home_viewpager_indicator"/>
+    <View style="@style/style_home_viewpager_indicator"/>
+</LinearLayout>

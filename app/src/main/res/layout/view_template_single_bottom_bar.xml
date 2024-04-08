@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#181818">
+
+    <FrameLayout
+        android:id="@+id/img_sub_close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/xml_collage_single_filter_close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_button_fl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ly_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_filter_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_filter"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_square_filter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_filter_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_filter_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bottom_single_filter"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_glitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_glitch_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_glitch"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_square_glitch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_glitch_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_glitch_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_glitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Glitch"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_adjust"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_adjust_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_adjust"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_square_adjust" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_adjust_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_adjust_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_adjust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Adjust"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_rotate_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_rotate"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_collage_single_rotate" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rotate_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_rotate_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_rotate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bottom_single_rotate"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_fliph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_fliph_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_fliph"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_collage_single_fliph" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fliph_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_fliph_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_fliph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bottom_single_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_flipv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_flipv_image"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_flipv"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xml_collage_single_flipv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_flipv_text"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/rl_flipv_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_flipv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bottom_single_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

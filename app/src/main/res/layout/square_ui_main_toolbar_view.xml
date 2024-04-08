@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <FrameLayout
+        android:id="@+id/square_ui_blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/bottom_bg_color" />
+
+    <FrameLayout
+        android:id="@+id/fx_ui_ly_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp">
+
+        <HorizontalScrollView
+            android:id="@+id/bottom_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/item_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_ratio_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_ratio"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_ratio" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_ratio_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_ratio_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_ratio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/bottom_ratio"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_blur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_blur_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_blur"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_blur" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_blur_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_blur_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_blur"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_blur"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_frame_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <com.picspool.instatextview.utils.DMSelectorImageView
+                                    android:id="@+id/img_frame"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_frame" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_frame_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_frame_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_frame"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_frame"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_background_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_background"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_background" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_background_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_background_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_background"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_background"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_filter_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_filter"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_filter" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_filter_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_filter_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_filter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_filter"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_glitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_glitch_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_glitch"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_glitch" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_glitch_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_glitch_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_glitch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/glitch"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_adjust"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_adjust_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_adjust"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_adjust" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_adjust_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_adjust_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_adjust"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/adjust"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_sticker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_sticker_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_sticker"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_sticker" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_sticker_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_sticker_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_sticker"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_sticker"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_text_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_text"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_text" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_text_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_text_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_text"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_crop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_crop_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_crop"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_crop" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_crop_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_crop_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_crop"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/snap_crop"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_shap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_shape_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_shape"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_shape" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_shape_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_shape_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_shape"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_shape"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/item_editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_editor_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_editor"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/xml_square_editor" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_editor_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/rl_editor_image"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/txt_editor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/square_editor"
+                                    android:textColor="@color/item_text_color_selectable"
+                                    android:textSize="8sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_rec"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_rec_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_rec"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_below="@+id/rl_rec_image"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt_rec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/item_text_color_selectable"
+                                android:textSize="8sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/view_adchoise"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="4dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</FrameLayout>

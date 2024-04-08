@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginEnd="54dp"
+    android:layout_marginRight="54dp"
+    android:background="#191a1d"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bottom_background"
+            android:textColor="@color/adjust_text_color_selectable"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/filter_tab_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/border_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bottom_Stroke"
+            android:textColor="@color/adjust_text_color_selectable"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/filter_tab_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/border_frame_wai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bottom_frame"
+            android:textColor="@color/adjust_text_color_selectable"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/filter_tab_selector" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+package com.picspool.lib.filter.gpu.retro;
+
+import com.picspool.lib.filter.gpu.normal.GPUImageToneCurveFilter;
+
+/* loaded from: classes3.dex */
+public class RetroCVol8Filter extends GPUImageToneCurveFilter {
+    private static final String FRAGMENT_SHADER = " varying highp vec2 textureCoordinate;\n uniform sampler2D inputImageTexture;\n uniform sampler2D toneCurveTexture;\n uniform lowp float mixturePercent;\n\n void main()\n {\n     lowp vec4 textureColor = texture2D(inputImageTexture, textureCoordinate);\n     lowp float redCurveValue = texture2D(toneCurveTexture, vec2(textureColor.r, 0.0)).r;\n     lowp float greenCurveValue = texture2D(toneCurveTexture, vec2(textureColor.g, 0.0)).g;\n     lowp float blueCurveValue = texture2D(toneCurveTexture, vec2(textureColor.b, 0.0)).b;\n\n     lowp vec4 textureColor2 = vec4(redCurveValue,greenCurveValue,blueCurveValue,textureColor.a);\n     lowp vec4 layer1 = vec4(mix(textureColor.rgb, textureColor2.rgb, textureColor2.a*mixturePercent), textureColor.a);\n     \n     mediump float ra;\n     if (2.0 * textureColor.r < textureColor.a) {\n         ra = 2.0 * layer1.r * textureColor.r + layer1.r * (1.0 - textureColor.a) + textureColor.r * (1.0 - layer1.a);\n     } else {\n         ra = layer1.a * textureColor.a - 2.0 * (textureColor.a - textureColor.r) * (layer1.a - layer1.r) + layer1.r * (1.0 - textureColor.a) + textureColor.r * (1.0 - layer1.a);\n     }\n     \n     mediump float ga;\n     if (2.0 * textureColor.g < textureColor.a) {\n         ga = 2.0 * layer1.g * textureColor.g + layer1.g * (1.0 - textureColor.a) + textureColor.g * (1.0 - layer1.a);\n     } else {\n         ga = layer1.a * textureColor.a - 2.0 * (textureColor.a - textureColor.g) * (layer1.a - layer1.g) + layer1.g * (1.0 - textureColor.a) + textureColor.g * (1.0 - layer1.a);\n     }\n     \n     mediump float ba;\n     if (2.0 * textureColor.b < textureColor.a) {\n         ba = 2.0 * layer1.b * textureColor.b + layer1.b * (1.0 - textureColor.a) + textureColor.b * (1.0 - layer1.a);\n     } else {\n         ba = layer1.a * textureColor.a - 2.0 * (textureColor.a - textureColor.b) * (layer1.a - layer1.b) + layer1.b * (1.0 - textureColor.a) + textureColor.b * (1.0 - layer1.a);\n     }\n     \n     lowp vec4 textureColor3 = vec4(ra, ga, ba, 1.0);\n     lowp vec4 layer2 = vec4(mix(textureColor.rgb, textureColor3.rgb, textureColor3.a*mixturePercent), textureColor.a);\n     gl_FragColor = vec4(((layer2.rgb - vec3(0.5)) * 0.8 + vec3(0.5)), layer2.w);\n }";
+
+    public RetroCVol8Filter() {
+        super(FRAGMENT_SHADER);
+    }
+}

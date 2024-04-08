@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <FrameLayout
+        android:id="@+id/layout_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/bg_function_area"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/layout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/bt_sel_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:id="@+id/vShape"
+                style="@style/bottom_tabs_ll">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="font_eng"
+                        android:textColor="@color/color_text"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/vSel_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="top"
+                        android:background="@color/bg_bg_sel_color"
+                        android:orientation="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vTrans"
+                style="@style/bottom_tabs_ll">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tx_my_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Transparency"
+                        android:textColor="@color/color_text"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/vSel_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="top"
+                        android:background="@color/bg_bg_sel_color"
+                        android:orientation="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bt_sel_buttons">
+
+            <FrameLayout
+                android:id="@+id/layout_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.picspool.lib.resource.widget.DMWBHorizontalListView
+                    android:id="@+id/horizontalListView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_trans"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible">
+
+                <SeekBar
+                    android:id="@+id/seekBarTrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:max="255"
+                    android:progress="0" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

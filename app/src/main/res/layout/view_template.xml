@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/CollageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.picspool.lib.view.image.DMIgnoreRecycleImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:id="@+id/imgvwlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.picspool.lib.sephiroth.android.library.imagezoom.ImageViewTouch
+            android:id="@+id/img_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_fg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <com.picspool.lib.sticker.drawonview.DMStickerCanvasView
+            android:id="@+id/img_facial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

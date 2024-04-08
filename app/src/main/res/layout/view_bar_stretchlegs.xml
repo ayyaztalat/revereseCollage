@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/libui_barview_mainbg_grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/libui_barview_bottom_margin">
+
+        <com.picspool.libfuncview.stretchlegs.CSStretchView
+            android:id="@+id/sv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/libui_barmainview_margin" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_compare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/libui_btn_compare_bottom_margin"
+        android:background="@drawable/btn_beauty_contrast_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_beauty_contrast" />
+
+    <FrameLayout
+        android:id="@+id/ly_funcbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libui_func_bar_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libui_bottom_title_bar_height"
+        android:background="@color/libui_barview_mainbg_white">
+
+        <FrameLayout
+            android:id="@+id/ly_reset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/img_reset"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/xml_btn_barview_reset"
+                android:gravity="center"
+                android:text="Reset"
+                android:textColor="@color/reset_txt_color_selector"
+                android:textSize="8sp" />
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="@style/MySeekBarStyle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="60dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libui_bottom_title_bar_height"
+        android:layout_gravity="bottom"
+        android:background="@color/libui_barview_mainbg_white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/libui_barview_line_grey" />
+
+        <FrameLayout
+            android:id="@+id/ly_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/libui_cancel_icon_width"
+                android:layout_height="@dimen/libui_cancel_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_cancel" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/libui_barview_title_stretchleg"
+            android:textColor="@color/libui_barview_txt_grey"
+            android:textSize="@dimen/libui_barmainview_title_txtsize" />
+
+        <FrameLayout
+            android:id="@+id/ly_confirm"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="@dimen/libui_ok_icon_width"
+                android:layout_height="@dimen/libui_ok_icon_width"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_top_ok" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.picspool.libfuncview.view.CSTipsView
+        android:id="@+id/ly_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:tips_drawable="@drawable/img_tipswindow_stretchleg"
+        app:tips_message="@string/libui_tipswindow_message_stretchleg" />
+</FrameLayout>

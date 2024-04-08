@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="centered" format="boolean"/>
+    <attr name="fillColor" format="color"/>
+    <attr name="radius" format="dimension"/>
+    <attr name="lineWidth" format="dimension"/>
+    <attr name="selectedColor" format="color"/>
+    <attr name="unselectedColor" format="color"/>
+    <attr name="footerColor" format="color"/>
+    <attr name="footerIndicatorHeight" format="dimension"/>
+    <attr name="footerIndicatorStyle">
+        <enum name="none" value="0" />
+        <enum name="triangle" value="1" />
+        <enum name="underline" value="2" />
+    </attr>
+    <attr name="footerLineHeight" format="dimension"/>
+    <attr name="selectedBold" format="boolean"/>
+    <attr name="fadeDelay" format="integer"/>
+    <attr name="fadeLength" format="integer"/>
+    <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+    <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+    <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+    <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    <attr name="el_headerLayout" format="reference">
+    </attr>
+    <attr name="el_contentLayout" format="reference">
+    </attr>
+    <attr name="themeLineHeight" format="dimension">
+    </attr>
+    <attr name="TopBarStyle1" format="reference">
+    </attr>
+
+<!--    <attr name="ci_height" format="dimension">-->
+<!--    </attr>-->
+<!--    <attr name="ci_margin" format="dimension">-->
+<!--    </attr>-->
+<!--    <attr name="ci_orientation">-->
+<!--        <enum name="horizontal" value="0" />-->
+<!--        <enum name="vertical" value="1" />-->
+<!--    </attr>-->
+<!--    <attr name="ci_width" format="dimension">-->
+<!--    </attr>-->
+<!--    <attr name="ci_drawable" format="reference">-->
+<!--    </attr>-->
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+        <attr name="ci_gravity" format="flags">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="TipsView">
+        <attr name="tips_message" format="reference"/>
+        <attr name="tips_drawable" format="reference"/>
+    </declare-styleable>
+    <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+    <declare-styleable name="TopBarStyle1">
+        <attr name="titlename" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="RoundedCornerImageView"/>
+    <declare-styleable name="ExpandableLayout">
+        <attr name="expandable_el_headerLayout" format="reference"/>
+        <attr name="expandable_el_contentLayout" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="integer"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_overlay" format="boolean"/>
+        <attr name="fill_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="DMUnderlinePageIndicator">
+        <attr name="fades" format="reference"/>
+        <attr name="style_selectedColor" format="color"/>
+        <attr name="style_fadeDelay" format="integer"/>
+        <attr name="style_fadeLength" format="integer"/>
+        <attr name="android_background" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="DMTitlePageIndicator">
+        <attr name="indicator_footerLineHeight" format="dimension"/>
+        <attr name="indicator_footerIndicatorStyle" format="integer"/>
+        <attr name="indicator_footerIndicatorHeight" format="dimension"/>
+        <attr name="footerIndicatorUnderlinePadding" format="dimension"/>
+        <attr name="footerPadding" format="dimension"/>
+        <attr name="linePosition" format="integer"/>
+        <attr name="topPadding" format="dimension"/>
+        <attr name="titlePadding" format="dimension"/>
+        <attr name="clipPadding" format="dimension"/>
+        <attr name="indicator_selectedColor" format="color"/>
+        <attr name="indicator_selectedBold" format="boolean"/>
+        <attr name="android_textColor" format="color"/>
+        <attr name="indicator_android_textSize" format="dimension"/>
+        <attr name="indicator_footerColor" format="color"/>
+        <attr name="indicator_android_background" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DMLinePageIndicator">
+        <attr name="page_indicator_centered" format="boolean"/>
+        <attr name="page_indicator_lineWidth" format="dimension"/>
+        <attr name="page_indicator_gapWidth" format="dimension"/>
+        <attr name="page_indicator_strokeWidth" format="dimension"/>
+        <attr name="page_indicator_unselectedColor" format="color"/>
+        <attr name="page_indicator_selectedColor" format="color"/>
+        <attr name="page_indicator_android_background" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="DMCirclePageIndicator">
+        <attr name="circle_page_indicator_centered" format="boolean"/>
+        <attr name="circle_page_indicator_snap" format="boolean"/>
+        <attr name="circle_page_indicator_android_orientation" format="integer"/>
+        <attr name="circle_page_indicator_radius" format="dimension"/>
+        <attr name="circle_page_indicator_gapWidth" format="dimension"/>
+        <attr name="circle_page_indicator_strokeWidth" format="dimension"/>
+        <attr name="circle_page_indicator_pageColor" format="color"/>
+        <attr name="circle_page_indicator_strokeColor" format="color"/>
+        <attr name="circle_page_indicator_fillColor" format="color"/>
+        <attr name="circle_page_indicator_android_background" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="DMPagerSlidingTabStrip">
+    <attr name="pstsIndicatorColor" format="color"/>
+    <attr name="pstsIndicatorHeight" format="dimension"/>
+    <attr name="pstsUnderlineColor" format="color"/>
+    <attr name="pstsUnderlineHeight" format="dimension"/>
+    <attr name="pstsDividerColor" format="color"/>
+    <attr name="pstsDividerWidth" format="dimension"/>
+    <attr name="pstsDividerPadding" format="dimension"/>
+    <attr name="pstsShouldExpand" format="boolean"/>
+    <attr name="pstsScrollOffset" format="dimension"/>
+    <attr name="pstsPaddingMiddle" format="boolean"/>
+    <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+    <attr name="pstsTabBackground" format="reference"/>
+    <attr name="pstsTabTextSize" format="dimension"/>
+    <attr name="pstsTabTextColor" format="color"/>
+    <attr name="pstsTabTextStyle" format="integer"/>
+    <attr name="pstsTabTextAllCaps" format="boolean"/>
+    <attr name="pstsTabTextAlpha" format="integer"/>
+    <attr name="pstsTabTextFontFamily" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="DMPagerSliderTabStripPixel">
+        <attr name="pixel_dimen" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CornerImageView">
+        <attr name="corner_color" format="color"/>
+        <attr name="corner_area" format="dimension"/>
+    </declare-styleable>
+</resources>

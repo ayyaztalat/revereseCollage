@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b1b1b"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/onlinestore"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_morestore"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_stickerbar_morestore" />
+
+                <ImageView
+                    android:id="@+id/img_newicon"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/xml_stickerbar_redpoint" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@color/xlb_stickerbar_main_color_line" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/stickersetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/close"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_done" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@color/xlb_stickerbar_main_color_line" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xlb_stickerbar_main_color_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.baiwang.libuiinstalens.xlbsticker.stickerbar.CSCircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom"
+            app:ci_drawable="@drawable/xml_viewpager_circle"
+            app:ci_height="4dp"
+            app:ci_width="4dp" />
+    </FrameLayout>
+</LinearLayout>

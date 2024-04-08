@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/bg_function_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pop_color">
+
+        <RelativeLayout
+            android:id="@+id/layout_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pop_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp">
+
+                <com.picspool.lib.resource.widget.DMWBHorizontalListView
+                    android:id="@+id/imgbgList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/ly_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@color/pop_color">
+
+                <ImageView
+                    android:id="@+id/image_ad"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sub_view_back" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

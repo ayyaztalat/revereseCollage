@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b1b1b"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/glitch_progress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:progressDrawable="@drawable/adjust_seek_bar"
+        android:thumb="@drawable/adjust_seek_bar_thumb" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/glitch_list"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <FrameLayout
+        android:id="@+id/img_sub_close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/xml_collage_single_filter_close" />
+    </FrameLayout>
+</LinearLayout>

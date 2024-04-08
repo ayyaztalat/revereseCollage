@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/ly_add"
+        android:layout_width="60dp"
+        android:layout_height="120dp">
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_rect_effect_item_add_bg">
+
+            <ImageView
+                android:id="@+id/img_main_add"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp" />
+
+            <TextView
+                android:id="@+id/textname_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="9sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_group_container"
+        android:layout_width="78dp"
+        android:layout_height="120dp">
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center">
+
+            <com.picspool.libfuncview.view.CSRoundImageView
+                android:id="@+id/img_main_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textname_group"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_rect_curve_img_titlebg"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_content_container"
+        android:layout_width="78dp"
+        android:layout_height="120dp">
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center">
+
+            <com.picspool.libfuncview.view.CSRoundImageView
+                android:id="@+id/img_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <FrameLayout
+                android:id="@+id/textselect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_rect_effect_item_adjust_select"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/libui_curvebar_adjusticon" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/shape_rect_effect_item"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textSize="9sp" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

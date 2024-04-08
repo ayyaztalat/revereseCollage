@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/album_bar_color">
+
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lib_album"
+            android:textColor="@color/album_bar_text_color"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/dm_ic_action_previous_item" />
+
+        <Button
+            android:id="@+id/btRight"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@color/bg_brown1"
+            android:text="cancel"
+            android:textColor="@color/album_bar_text_color"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="115dp">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/album_list_bg_color"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/dm_album_list_divider"
+            android:dividerHeight="1dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/middlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:background="@color/album_middle_bg_color">
+
+        <TextView
+            android:id="@+id/tx_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lib_album"
+            android:textColor="@color/album_bar_text_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btOK"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dm_img_confirm_bg"
+            android:text="@string/lib_confirm"
+            android:textColor="@color/album_bar_text_color"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <com.picspool.lib.view.DMPhotoChooseBarView
+        android:id="@+id/photoChooseBarView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/photoselector_photochoosebar_bg_color" />
+</RelativeLayout>

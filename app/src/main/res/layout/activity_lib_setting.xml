@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_act_setting_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/libui_barview_mainbg_grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/libui_barview_mainbg_white">
+
+        <FrameLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/xml_square_back" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:maxLines="1"
+            android:text="@string/stickerbar_setting_title"
+            android:textColor="@color/app_top_text_color"
+            android:textSize="@dimen/top_bar_text_size"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/btn_done"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/xlb_stickerbar_main_color_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/stickerbar_setting_done"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_vp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp" />
+    </FrameLayout>
+</FrameLayout>

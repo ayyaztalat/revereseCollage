@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="@dimen/fliter_group_head_img_width"
+    android:layout_height="@dimen/bottom_tools_headler_height">
+
+    <FrameLayout
+        android:layout_width="@dimen/fliter_group_head_img_width_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <com.photo.editor.square.splash.view.filterbar.CSRoundedCornerImageView
+            android:id="@+id/item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fliter_group_head_img_height"
+            android:scaleType="fitXY"
+            app:cornerRadius="8dp" />
+
+        <com.photo.editor.square.splash.view.filterbar.CSRoundedCornerImageView
+            android:id="@+id/item_icon_filter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fliter_group_head_img_height"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:cornerRadius="8dp" />
+
+        <com.photo.editor.square.splash.view.filterbar.CSRoundCornerTextView
+            android:id="@+id/item_icon_select_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fliter_group_head_img_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_round_c"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageLike"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start|top"
+            android:padding="2dp"
+            android:src="@drawable/xml_filter_ui_like" />
+
+        <com.photo.editor.square.splash.view.filterbar.CSRoundCornerTextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </FrameLayout>
+</FrameLayout>

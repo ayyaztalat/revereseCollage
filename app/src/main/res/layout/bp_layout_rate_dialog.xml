@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_bg"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bp_rate_bg"
+        android:paddingStart="20dp"
+        android:paddingTop="60dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please give it 5star"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rate_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/app_rate_msg"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rate_title" />
+
+        <View
+            android:id="@+id/iv_star_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rate_view_dialog_star_unchecked"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rate_msg" />
+
+        <View
+            android:id="@+id/iv_star_2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/rate_view_dialog_star_unchecked"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_star_1"
+            app:layout_constraintEnd_toStartOf="@+id/iv_star_3"
+            app:layout_constraintStart_toEndOf="@+id/iv_star_1"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_1" />
+
+        <View
+            android:id="@+id/iv_star_3"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/rate_view_dialog_star_unchecked"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_star_2"
+            app:layout_constraintEnd_toStartOf="@+id/iv_star_4"
+            app:layout_constraintStart_toEndOf="@+id/iv_star_2"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_2" />
+
+        <View
+            android:id="@+id/iv_star_4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/rate_view_dialog_star_unchecked"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_star_3"
+            app:layout_constraintEnd_toStartOf="@+id/iv_star_5"
+            app:layout_constraintStart_toEndOf="@+id/iv_star_3"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_3" />
+
+        <View
+            android:id="@+id/iv_star_5"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/rate_view_dialog_star_unchecked"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_star_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_4" />
+
+        <View
+            android:id="@+id/rate_hand_arrow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/rate_hand_arrow"
+            android:transformPivotX="0px"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:0.188"
+            app:layout_constraintEnd_toEndOf="@+id/iv_star_5"
+            app:layout_constraintStart_toStartOf="@+id/iv_star_1"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_5" />
+
+        <View
+            android:id="@+id/rate_hand"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rate_hand"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/iv_star_1"
+            app:layout_constraintTop_toTopOf="@+id/iv_star_1" />
+
+        <TextView
+            android:id="@+id/problemTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please select the problem you think or write your suggestion"
+            android:textColor="#d5d5d5"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_star_1" />
+
+        <RadioGroup
+            android:id="@+id/problemRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/problemTxt">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/problem_radio_button"
+                android:checked="true"
+                android:paddingStart="10dp"
+                android:text="Not easy to use"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:button="@drawable/problem_radio_button"
+                android:paddingStart="10dp"
+                android:text="Have ads"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:button="@drawable/problem_radio_button"
+                android:paddingStart="10dp"
+                android:text="Have crash"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/problemEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/problem_edit_bg"
+            android:gravity="start"
+            android:hint="Please input your suggest"
+            android:minHeight="60dp"
+            android:padding="12dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/problemRg" />
+
+        <TextView
+            android:id="@+id/rate_btn"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/bp_btn_round_18_bg"
+            android:gravity="center"
+            android:text="Rate us"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/problemEt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/rate_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/rate_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_rate_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/rate_delete"
+        app:layout_constraintBottom_toTopOf="@+id/main_bg"
+        app:layout_constraintEnd_toEndOf="@+id/main_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

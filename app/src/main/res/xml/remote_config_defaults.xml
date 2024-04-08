@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>rate_js
+        </key>
+        <value> {&quot;rt_user&quot;:&quot;1&quot;, &quot;rt_rate&quot;:&quot;100&quot;, &quot;rt_positon&quot;:&quot;7&quot;,\10            &quot;rt_again_times&quot;:&quot;1&quot;, &quot;isshow_rt_tst&quot;:&quot;100&quot;, &quot;max_times&quot;:&quot;8&quot;,\10            &quot;rt_start_times&quot;:&quot;0&quot;, &quot;no_rate_os&quot;:[]} 
+        </value>
+    </entry>
+    <entry>
+        <key>adshow_js
+        </key>
+        <value> {\10            &quot;inter_as&quot;: &quot;100&quot;,\10            &quot;native_as&quot;: &quot;100&quot;,\10            &quot;banner_as&quot;: &quot;100&quot;,\10            &quot;gallery_ba_as&quot;: &quot;100&quot;,\10            &quot;main_ba_as&quot;: &quot;100&quot;,\10            &quot;back_main_int_as&quot;: &quot;100&quot;,\10            &quot;Themelist_na_as&quot;: &quot;100&quot;,\10            &quot;share_na_as&quot;: &quot;100&quot;,\10            &quot;as_int_interval&quot;: &quot;12000&quot;,\10            &quot;launch_as&quot;: &quot;100&quot;,\10            &quot;launch_interval_sec&quot;: &quot;60&quot;\10            } 
+        </value>
+    </entry>
+</defaultsMap>

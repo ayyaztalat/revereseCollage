@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/toolsbar_main_color_grey"
+    android:gravity="bottom">
+
+    <FrameLayout
+        android:id="@+id/bg_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/resize_function_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_resize_outer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:alpha="0.9"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/layout_outer"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_outer_flag"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/collage_border_outer" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarouter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="10dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:maxHeight="3dp"
+                        android:minHeight="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbar_details"
+                        android:thumb="@drawable/seekthumb" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/layout_inner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_inner_flag"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/collage_border_inner" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="10dp"
+                        android:max="100"
+                        android:maxHeight="3dp"
+                        android:minHeight="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbar_details"
+                        android:thumb="@drawable/seekthumb" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_cornor_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:alpha="0.9"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/layout_cornor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_cornor_flag"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/collage_border_corner" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarcornor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="10dp"
+                        android:max="100"
+                        android:maxHeight="3dp"
+                        android:minHeight="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbar_details"
+                        android:thumb="@drawable/seekthumb" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/layout_rotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_rotation_flag"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/collage_border_radius" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarrotation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="10dp"
+                        android:max="30"
+                        android:maxHeight="3dp"
+                        android:minHeight="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:progress="15"
+                        android:progressDrawable="@drawable/seekbar_details"
+                        android:thumb="@drawable/seekthumb" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

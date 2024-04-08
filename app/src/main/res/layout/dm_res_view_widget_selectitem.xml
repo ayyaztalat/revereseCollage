@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="62dp"
+    android:layout_height="80dp">
+
+    <FrameLayout
+        android:id="@+id/frm_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginRight="8dp">
+
+        <com.picspool.lib.view.image.DMBorderImageView
+            android:id="@+id/item_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:id="@+id/item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageBackGround"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.2"
+                android:src="@drawable/blackimg"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmallTitle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageNew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/dm_imgnew"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageOverrideSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/dm_img_item_override_select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageDownload"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:alpha="0.5"
+                android:src="@drawable/dm_download"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageLike"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start|top"
+                android:src="@drawable/dm_imglike"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/imgItemSelect"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:src="@drawable/dm_img_item_select"
+            android:visibility="invisible" />
+    </FrameLayout>
+</FrameLayout>
